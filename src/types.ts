@@ -13,3 +13,16 @@ export interface Vehicle {
 export interface TokenResponsePayload {
     token: string
 }
+
+export enum FindFalconeStatus {
+    Success = "success",
+    Failure = "false"
+}
+
+
+export type FindFalconeResponsePayload = {
+    status: FindFalconeStatus,
+    timeTaken: number
+    planet_name?: string,
+    error?: string
+}

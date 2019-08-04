@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@types/jest": "^24.0.16",
+    "@types/lodash": "^4.14.136",
     "@types/node": "^12.6.8",
     "@types/react": "^16.8.24",
     "@types/react-dom": "^16.8.5",
@@ -33,9 +34,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "proxy": "https://",
-  "devDependencies": {
-    "@types/lodash": "^4.14.136"
   }
 }

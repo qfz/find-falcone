@@ -16,10 +16,10 @@ export const VehiclePicker: FunctionComponent<Props> = ({vehicles, selectedVehic
     }
 
     return (
-        <div>
+        <div className="vehicle-picker">
             {
-                vehicles.map(v => (
-                    <div>
+                vehicles.map((v, index) => (
+                    <div key={index}>
                         <input
                             type="radio"
                             name={radioGroupName}

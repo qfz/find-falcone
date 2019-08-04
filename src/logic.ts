@@ -1,4 +1,4 @@
-import { Vehicle } from "./types"
+import { Vehicle, Planet } from "./types"
 
 export const getAvailableVehicles = (vehicles: Vehicle[], selectedVehicleNames: (string | undefined)[]): Vehicle[] => {
     return vehicles.map(v => {
@@ -15,3 +15,12 @@ export const getAvailableVehicles = (vehicles: Vehicle[], selectedVehicleNames: 
     })
 }
 
+// currentSelected is the selected planet name for the active dropdown.
+export const getValidPlanets = (planets: Planet[], selectedPlanetNames: string[], currentSelected: string | undefined) => {
+    return planets.filter(p => {
+        return (
+            p.name === currentSelected ||
+            !(selectedPlanetNames.includes(p.name))
+        )
+    })
+}

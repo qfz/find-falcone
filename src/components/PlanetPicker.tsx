@@ -14,7 +14,7 @@ export const PlanetPicker: FunctionComponent<Props> = ({index, planets, selected
     }
 
     return (
-        <div>
+        <div className="planet-picker">
             <h5>Destination {index}</h5>
             <select value={selectedPlanet} onChange={onChange}>
                 <option>Select</option>
